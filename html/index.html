@@ -1,449 +1,550 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Álvaro Sánchez</title>
+  <title>Álvaro Sánchez Pinedo | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Álvaro Sánchez Pinedo, a frontend developer from Alicante working with Angular, TypeScript and Ionic: skills, experience and projects.">
+  <meta name="author" content="Álvaro Sánchez Pinedo">
+  <meta name="theme-color" content="#171925">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Álvaro Sánchez Pinedo | Frontend Developer">
+  <meta property="og:description" content="Skills, experience and projects of Álvaro Sánchez Pinedo, a frontend developer from Alicante working with Angular, TypeScript and Ionic.">
+  <meta property="og:url" content="https://asp161.github.io/portfolio/html/index.html">
+  <meta property="og:image" content="https://asp161.github.io/portfolio/assets/img/me2.jpg">
+  <link rel="canonical" href="https://asp161.github.io/portfolio/html/index.html">
   <link rel="icon" href="../assets/icon.ico">
-  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css"> 
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css"> 
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css"> 
-  <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
+  <link rel="stylesheet" href="../assets/css/themify-icons.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/css/virtual.css">
+  <link rel="stylesheet" href="../assets/css/topbar.virtual.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 <body class="theme-green">
   <!-- Back to top button -->
-  <div class="btn-back_to_top">
+  <a href="#home" class="btn-back_to_top" aria-label="Back to top">
     <span class="ti-arrow-up"></span>
-  </div>
-  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/Playa_de_San_JuanALC.jpg)">
-    <!-- Navbar -->
-    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
-      <div class="container">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
-          <span class="ti-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
-            </li>
-          </ul>
-          <ul class="nav ml-auto">
-            <li class="nav-item">
-            </li>
-          </ul>
-        </div>
+  </a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="#home" class="navbar-brand"><b>Álvaro</b> Sánchez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ti-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div> <!-- End Navbar -->
+    </div>
+  </nav> <!-- End Navbar -->
+
+  <header class="vg-page page-home" id="home">
     <!-- Caption header -->
-    <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Welcome</h5>
+    <div class="caption-header text-center wow fadeInUp">
+      <p class="hero-eyebrow">Welcome</p>
       <h1 class="fw-light mb-4">I'm <b class="fg-theme">Álvaro</b> Sánchez</h1>
-      <div class="badge">Full-Stack, Software & Android Developer</div>
-      
+      <div class="badge">Frontend Developer · Angular, TypeScript &amp; Ionic</div>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-theme">See my work</a>
+        <a href="#contact" class="btn btn-hero-outline">Contact me</a>
+      </div>
     </div> <!-- End Caption header -->
-  </div>
-  
-  <div class="vg-page page-about" id="about">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-4 py-3">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/me.jpg" alt="me">
-          </div>
-        </div>
-        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
-          <h1 class="fw-light">Álvaro Sánchez Pinedo</h1>
-          <h5 class="fg-theme mb-3">Web Designer, UI/UX, Software & Android Developer</h5>
-          <p class="text-muted">I'm an enthusiastic Full Stack Developer passionate about Angular, Ionic, Three.js, Php. Recently, I've pivoted towards cybersecurity, driven by a desire for new challenges, constantly innovating to deliver top-notch solutions. I'm committed to pushing boundaries in both web development and cybersecurity realms.</p>
-          <ul class="theme-list">
-            <li><b>From:</b> Alicante, ES</li>
-            <li><b>Lives In:</b> Alicante, ES</li>
-            <li><b>Age:</b> 24</li>
-            <li><b>Gender:</b> Male</li>
-          </ul>
-          <a href="../assets/cv/AlvaroSanchezPinedo_CV.pdf" class="btn btn-theme-outline" download>Download CV</a>
-          <a href= "mailto: alvarosnchzpnd@gmail.com" class="btn btn-theme-outline" >Send Email</a>
+    <a href="#about" class="floating-button" aria-label="Scroll to About">
+      <span class="ti-angle-down"></span>
+    </a>
+  </header>
 
+  <main>
+    <!-- About page -->
+    <section class="vg-page page-about" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 py-3">
+            <div class="img-place wow fadeInUp">
+              <img src="../assets/img/me2.jpg" alt="Portrait of Álvaro Sánchez Pinedo" width="640" height="621">
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+            <div class="badge badge-subhead">About me</div>
+            <h2 class="h1 fw-light about-name">Álvaro Sánchez Pinedo</h2>
+            <p class="h5 fg-theme mb-3">Frontend Developer at Volkswagen Digital:Hub</p>
+            <p class="text-muted">I'm a frontend developer focused on Angular and TypeScript, building responsive and accessible web applications. I also enjoy creating mobile apps with Ionic and 3D experiences with Three.js. During my Multimedia Engineering degree I worked a lot on cybersecurity, so I care about building software that is secure as well as pleasant to use.</p>
+            <ul class="theme-list">
+              <li><b>From:</b> Alicante, ES</li>
+              <li><b>Lives In:</b> Alicante, ES</li>
+              <li><b>Age:</b> 24</li>
+            </ul>
+            <a href="../assets/cv/AlvaroSanchezPinedo_CV.pdf" class="btn btn-theme" download><span class="ti-download"></span>Download CV</a>
+            <a href="mailto:alvarosnchzpnd@gmail.com" class="btn btn-theme-outline"><span class="ti-email"></span>Send Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About page -->
 
+    <!-- Skills page -->
+    <section class="vg-page section-alt" id="skills">
+      <div class="container">
+        <div class="section-head wow fadeInUp">
+          <div class="badge badge-subhead">Skills</div>
+          <h2 class="h1 fw-normal">My Skills</h2>
         </div>
-      </div>
-    </div>
-    <div class="container py-5">
-      <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
-      <div class="row py-3">
-        <div class="col-md-6">
-          <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Web coding skills</h4>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">HTML + CSS</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">100%</div>
+        <div class="row">
+          <div class="col-md-6 py-3">
+            <div class="skill-card">
+              <h3 class="wow fadeInUp">Web coding skills</h3>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>HTML + CSS</span><span class="value">100%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-label="HTML + CSS" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Ionic</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">95%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>Ionic</span><span class="value">95%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-label="Ionic" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">JavaScript / TypeScript</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>JavaScript / TypeScript</span><span class="value">90%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-label="JavaScript / TypeScript" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Wordpress y Omeka (CMS)</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">85%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>WordPress &amp; Omeka (CMS)</span><span class="value">85%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-label="WordPress and Omeka (CMS)" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">ThreeJs</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>Three.js</span><span class="value">80%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-label="Three.js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">PHP</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>PHP</span><span class="value">80%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-label="PHP" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Angular</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">100%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>Angular</span><span class="value">100%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-label="Angular" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Software coding skills</h4>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">C / C++</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+          <div class="col-md-6 py-3">
+            <div class="skill-card">
+              <h3 class="wow fadeInUp">Software coding skills</h3>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>C / C++</span><span class="value">90%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-label="C / C++" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">Java</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>Java</span><span class="value">90%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-label="Java" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">SSL, TLS, HTTPS</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">85%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>SSL, TLS, HTTPS</span><span class="value">85%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-label="SSL, TLS, HTTPS" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper wow fadeInUp">
-              <span class="caption">MySQL / MongoDB</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              <div class="progress-wrapper wow fadeInUp">
+                <div class="caption"><span>MySQL / MongoDB</span><span class="value">70%</span></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-label="MySQL / MongoDB" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-md-6 wow fadeInRight">
-          <h2 class="fw-normal">Education</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">2020 - 2026</div>
-              <div class="details">
-                <h5>Multimedia Engineering</h5>
-                <small class="fg-theme">University of Alicante</small>
-                <p>The Multimedia Engineering degree is located in the intermediate space between traditional engineering and
-                  computer engineering and has, as a general objective, training professionals in the ICT sector who are capable of
-                  direct new projects in the field of Multimedia, both in the digital leisure and entertainment sector and in the
-                  content management for dissemination in information networks.</p>
-                <p><b>Final Degree Project (TFG):</b> <b class="fg-theme">MoodFlow</b>, a mobile app built with Ionic, Angular and
-                  Capacitor to log and track emotional state, with charts of its evolution and personalized suggestions such as
-                  breathing exercises, emotional writing and creative activities. <b>Grade: 10/10</b>.
-                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7470810927668510720/" target="_blank" rel="noopener noreferrer">Read more about it on LinkedIn</a>.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">2018 - 2020</div>
-              <div class="details">
-                <h5>Bachelor of Science</h5>
-                <small class="fg-theme">IES Playa San Juan</small>
-                <p>Average grade 8</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Experience</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">July 2025 - Current</div>
-              <div class="details">
-                <h5>Frontend Developer</h5>
-                <small class="fg-theme">Volkswagen Digital:Hub</small>
-                <p>Currently working at Volkswagen Digital:Hub, developing web applications using Angular and TypeScript. Contributing to digital solutions for the automotive industry, implementing responsive interfaces and modern front-end architectures that shape the future of mobility and digital transformation.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">January 2025 - May 2025</div>
-              <div class="details">
-                <h5>Angular Developer</h5>
-                <small class="fg-theme">NTT DATA</small>
-                <p>During my internship at NTT DATA, I participated in the development of web applications using Angular and TypeScript. I collaborated with multidisciplinary teams in agile environments following the Scrum methodology, contributing to the implementation of responsive and accessible interfaces while adhering to Front-End development best practices. Additionally, I actively participated in code reviews and bug fixing, helping to improve the quality and stability of the final product.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">Summer 2023</div>
-              <div class="details">
-                <h5>Cashier & Stocker</h5>
-                <small class="fg-theme">Consum Cooperativa</small>
-                <p>These roles develop skills in data handling, problem-solving, and customer service, all essential in the programming world. Additionally, they provide experience in time management and teamwork, key aspects in any work environment.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">Summer 2022</div>
-              <div class="details">
-                <h5>Cashier & Stocker</h5>
-                <small class="fg-theme">Consum Cooperativa</small>
-                <p>These roles develop skills in data handling, problem-solving, and customer service, all essential in the programming world. Additionally, they provide experience in time management and teamwork, key aspects in any work environment.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="vg-page page-service">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Service</div>
-      </div>
-      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
-      <div class="row mt-5">
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-mobile"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">App Development</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-desktop"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Web Development</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-save"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Software Development</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-paint-bucket"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Web Design</h4>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+    <!-- End Skills page -->
 
-  
-  <!-- Portfolio page -->
-  <div class="vg-page page-portfolio" id="portfolio">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Portfolio</div>
-      </div>
-      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
-      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".apps">Projects</button>
-        <button class="btn btn-theme-outline" data-filter=".template">University Practices</button>
-      </div>
-      <div class="gridder my-3">
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/Novela_Visual')">
-          <div class="img-place" data-src="../assets/img/work/Portada.png">
-            <img src="../assets/img/work/Portada.png" alt="Imagen_Novela_Visual">
-            <div class="img-caption">
-              <h5 class="fg-theme">Visual Novel</h5>
-              <p>Visual Novel</p>
-              <p>HTML, CSS y JS</p>
-            </div>
+    <!-- Resume page -->
+    <section class="vg-page" id="resume">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0 wow fadeInRight">
+            <h2 class="timeline-heading">Education</h2>
+            <ul class="timeline mt-4 pr-md-5">
+              <li>
+                <div class="title">2020 – 2026</div>
+                <div class="details">
+                  <h3>Multimedia Engineering</h3>
+                  <small class="fg-theme">University of Alicante</small>
+                  <p>The Multimedia Engineering degree is located in the intermediate space between traditional engineering and
+                    computer engineering and has, as a general objective, training professionals in the ICT sector who are capable of
+                    directing new projects in the field of Multimedia, both in the digital leisure and entertainment sector and in the
+                    content management for dissemination in information networks.</p>
+                  <div class="highlight">
+                    <div class="highlight-head">
+                      <span class="highlight-label">Final Degree Project (TFG)</span>
+                      <span class="highlight-grade">Grade: 10/10</span>
+                    </div>
+                    <p><b>MoodFlow</b>, a mobile app built with Ionic, Angular and Capacitor to log and track emotional state,
+                      with charts of its evolution and personalized suggestions such as breathing exercises, emotional writing
+                      and creative activities.</p>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7470810927668510720/" class="link-arrow" target="_blank" rel="noopener noreferrer">Read more about it on LinkedIn<span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="title">2018 – 2020</div>
+                <div class="details">
+                  <h3>High School Diploma (Science)</h3>
+                  <small class="fg-theme">IES Playa San Juan</small>
+                  <p>Average grade 8</p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>
-        
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/Secure_Files')">
-          <div class="img-place" data-src="../assets/img/work/secure-file.jpg">
-            <img src="../assets/img/work/secure-file.jpg" alt="securefiles_img">
-            <div class="img-caption">
-              <h5 class="fg-theme">Secure Multimedia Files</h5>
-              <p>Practice at the University</p>
-              <p>Java</p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/APP_Puerta_Logicas')">
-          <div class="img-place" data-src="../assets/img/work/a.jpg">
-            <img src="../assets/img/work/a.jpg" alt="logicdoors_img">
-            <div class="img-caption">
-              <h5 class="fg-theme">Logic Doors App</h5>
-              <p>Practice at the University</p>
-              <p>Java - Android Studio</p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://bitbucket.org/alvaroasp161/to-do-app/src/master/')">
-          <div class="img-place" data-src="../assets/img/work/images.jpeg">
-            <img src="../assets/img/work/images.jpeg" alt="angular_img" style=height:246px>
-            <div class="img-caption">
-              <h5 class="fg-theme"><a href="https://bitbucket.org/alvaroasp161/to-do-app/src/master/">Angular</a> + <a href="https://bitbucket.org/alvaroasp161/api-auth/src/master/">API-Auth</a> + <a href="https://bitbucket.org/alvaroasp161/asp161/src/master/">API-REST</a></h5>
-              <p>Practice at the University</p>
-              <p>API - JS - Express - Node ...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/Pong_JS_Node')">
-          <div class="img-place" data-src="../assets/img/work/a.jpg">
-            <img src="../assets/img/work/pong.jpg" alt="pong_img" >
-            <div class="img-caption">
-              <h5 class="fg-theme">Pong</h5>
-              <p>Practice at the University</p>
-              <p>Javascript - Node</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-item apps wow zoomIn" onclick="redirectToGitHub('https://m4rket.ovh/')">
-          <div class="img-place" data-src="../assets/img/work/5.png" style=height:246px>
-            <img src="../assets/img/work/5.png" alt="m4rket_img">
-            <div class="img-caption">
-              <h5 class="fg-theme">M4RKET</h5>
-              <p>1 year Development Project</p>
-              <p>Ionic - Angular - WebGL</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/Modelado_y_Animacion')">
-          <div class="img-place" data-src="../assets/img/work/normal.jpg" style=height:246px>
-            <img src="../assets/img/work/normal.jpg" alt="mac_img">
-            <div class="img-caption">
-              <h5 class="fg-theme">Modeling and Animation</h5>
-              <p>4 projects</p>
-              <p>3DMax</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/MusicWorld')">
-          <div class="img-place" data-src="../assets/img/work/wordpres.png" style=height:246px>
-            <img src="../assets/img/work/wordpres.png" alt="wordpress_img">
-            <div class="img-caption">
-              <h5 class="fg-theme">MusicWorld</h5>
-              <p>Virtual Instrument Shop</p>
-              <p>Wordpress - PHP</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="grid-item template wow zoomIn" onclick="redirectToGitHub('https://github.com/asp161/Practica_Multiplicar_Matrices_Con_Arboles_En_C')">
-          <div class="img-place" data-src="../assets/img/work/c.png" style=height:246px>
-            <img src="../assets/img/work/c.png" alt="c_img">
-            <div class="img-caption">
-              <h5 class="fg-theme">Matrix Multiplication</h5>
-              <p>Multiply two matrices with Linux processes</p>
-              <p>C</p>
-            </div>
-          </div>
-        </div>
-        
-      </div> 
-      <!-- End gridder -->
-      <div class="text-center wow fadeInUp">
-        <a href="https://github.com/asp161?tab=repositories" class="btn btn-theme">Load More</a>
-        
-      </div>
-    </div>
-  </div> 
-  <!-- End Portfolio page -->
-  
-  
-  <!-- Footer -->
-  <div class="vg-footer">
-    <div class="container">
-        <div class=" col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Contact me</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li>alvarosnchzpnd@gmail.com</li>
-              <li><a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-pinedo-25a9b7291/" target="_blank" rel="noopener noreferrer">
-                <i class="ti-linkedin"></i>
-            </a></li>
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+            <h2 class="timeline-heading">Experience</h2>
+            <ul class="timeline mt-4 pr-md-5">
+              <li>
+                <div class="title">July 2025 – Current</div>
+                <div class="details">
+                  <h3>Frontend Developer</h3>
+                  <small class="fg-theme">Volkswagen Digital:Hub</small>
+                  <p>Currently working at Volkswagen Digital:Hub, developing web applications using Angular and TypeScript. Contributing to digital solutions for the automotive industry, implementing responsive interfaces and modern front-end architectures that shape the future of mobility and digital transformation.</p>
+                </div>
+              </li>
+              <li>
+                <div class="title">January 2025 – May 2025</div>
+                <div class="details">
+                  <h3>Angular Developer</h3>
+                  <small class="fg-theme">NTT DATA</small>
+                  <p>During my internship at NTT DATA, I participated in the development of web applications using Angular and TypeScript. I collaborated with multidisciplinary teams in agile environments following the Scrum methodology, contributing to the implementation of responsive and accessible interfaces while adhering to Front-End development best practices. Additionally, I actively participated in code reviews and bug fixing, helping to improve the quality and stability of the final product.</p>
+                </div>
+              </li>
+              <li>
+                <div class="title">Summers 2022 &amp; 2023</div>
+                <div class="details">
+                  <h3>Cashier &amp; Stocker</h3>
+                  <small class="fg-theme">Consum Cooperativa</small>
+                  <p>These roles develop skills in data handling, problem-solving, and customer service, all essential in the programming world. Additionally, they provide experience in time management and teamwork, key aspects in any work environment.</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2024. All right reserved | Álvaro Sánchez Pinedo</p>
+      </div>
+    </section>
+    <!-- End Resume page -->
+
+    <!-- Service page -->
+    <section class="vg-page page-service section-alt" id="services">
+      <div class="container">
+        <div class="section-head wow fadeInUp">
+          <div class="badge badge-subhead">Service</div>
+          <h2 class="h1 fw-normal">What can I do?</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 wow fadeInUp">
+            <div class="card card-service">
+              <div class="icon">
+                <span class="ti-mobile"></span>
+              </div>
+              <div class="caption">
+                <h3 class="fg-theme">App Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeInUp">
+            <div class="card card-service">
+              <div class="icon">
+                <span class="ti-desktop"></span>
+              </div>
+              <div class="caption">
+                <h3 class="fg-theme">Web Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeInUp">
+            <div class="card card-service">
+              <div class="icon">
+                <span class="ti-save"></span>
+              </div>
+              <div class="caption">
+                <h3 class="fg-theme">Software Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeInUp">
+            <div class="card card-service">
+              <div class="icon">
+                <span class="ti-paint-bucket"></span>
+              </div>
+              <div class="caption">
+                <h3 class="fg-theme">Web Design</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- End Service page -->
+
+    <!-- Portfolio page -->
+    <section class="vg-page page-portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head wow fadeInUp">
+          <div class="badge badge-subhead">Portfolio</div>
+          <h2 class="h1 fw-normal">See my work</h2>
+        </div>
+        <div class="filterable-button pb-3 wow fadeInUp">
+          <button type="button" class="btn selected" data-filter="*" aria-pressed="true">All</button>
+          <button type="button" class="btn" data-filter=".apps" aria-pressed="false">Projects</button>
+          <button type="button" class="btn" data-filter=".template" aria-pressed="false">University Practices</button>
+        </div>
+        <div class="gridder my-3">
+          <div class="grid-item apps wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/moodflow-logo.png" alt="MoodFlow logo" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://www.linkedin.com/feed/update/urn:li:activity:7470810927668510720/" class="work-link" target="_blank" rel="noopener noreferrer">MoodFlow</a></h3>
+                <p>Final Degree Project (TFG) · Grade 10/10</p>
+                <ul class="work-tags">
+                  <li>Ionic</li>
+                  <li>Angular</li>
+                  <li>Capacitor</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/Portada.png" alt="Visual Novel cover" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/Novela_Visual" class="work-link" target="_blank" rel="noopener noreferrer">Visual Novel</a></h3>
+                <p>Practice at the University</p>
+                <ul class="work-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/secure-file.jpg" alt="Padlock over a folder of files" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/Secure_Files" class="work-link" target="_blank" rel="noopener noreferrer">Secure Multimedia Files</a></h3>
+                <p>Practice at the University</p>
+                <ul class="work-tags">
+                  <li>Java</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/a.jpg" alt="Android Studio logo" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/APP_Puerta_Logicas" class="work-link" target="_blank" rel="noopener noreferrer">Logic Gates App</a></h3>
+                <p>Practice at the University</p>
+                <ul class="work-tags">
+                  <li>Java</li>
+                  <li>Android Studio</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/images.jpeg" alt="Angular and REST API logos" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3 class="work-links"><a href="https://bitbucket.org/alvaroasp161/to-do-app/src/master/" class="work-link" target="_blank" rel="noopener noreferrer">Angular</a> + <a href="https://bitbucket.org/alvaroasp161/api-auth/src/master/" target="_blank" rel="noopener noreferrer">API-Auth</a> + <a href="https://bitbucket.org/alvaroasp161/asp161/src/master/" target="_blank" rel="noopener noreferrer">API-REST</a></h3>
+                <p>Practice at the University</p>
+                <ul class="work-tags">
+                  <li>API</li>
+                  <li>JS</li>
+                  <li>Express</li>
+                  <li>Node</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/pong.jpg" alt="Pong game screen" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/Pong_JS_Node" class="work-link" target="_blank" rel="noopener noreferrer">Pong</a></h3>
+                <p>Practice at the University</p>
+                <ul class="work-tags">
+                  <li>JavaScript</li>
+                  <li>Node</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item apps wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/5.png" alt="M4RKET logo" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://m4rket.ovh/" class="work-link" target="_blank" rel="noopener noreferrer">M4RKET</a></h3>
+                <p>1 year Development Project</p>
+                <ul class="work-tags">
+                  <li>Ionic</li>
+                  <li>Angular</li>
+                  <li>WebGL</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="../assets/img/work/normal.jpg" alt="3D modeled scene" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/Modelado_y_Animacion" class="work-link" target="_blank" rel="noopener noreferrer">Modeling and Animation</a></h3>
+                <p>4 projects</p>
+                <ul class="work-tags">
+                  <li>3ds Max</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb contain">
+                <img src="../assets/img/work/wordpres.png" alt="WordPress logo" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/MusicWorld" class="work-link" target="_blank" rel="noopener noreferrer">MusicWorld</a></h3>
+                <p>Virtual Instrument Shop</p>
+                <ul class="work-tags">
+                  <li>WordPress</li>
+                  <li>PHP</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid-item template wow fadeIn">
+            <article class="work-card">
+              <div class="work-thumb contain">
+                <img src="../assets/img/work/c.png" alt="C programming language logo" loading="lazy">
+                <span class="work-arrow ti-arrow-top-right"></span>
+              </div>
+              <div class="work-body">
+                <h3><a href="https://github.com/asp161/Practica_Multiplicar_Matrices_Con_Arboles_En_C" class="work-link" target="_blank" rel="noopener noreferrer">Matrix Multiplication</a></h3>
+                <p>Multiply two matrices with Linux processes</p>
+                <ul class="work-tags">
+                  <li>C</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- End gridder -->
+        <div class="text-center mt-4 wow fadeInUp">
+          <a href="https://github.com/asp161?tab=repositories" class="btn btn-theme" target="_blank" rel="noopener noreferrer"><span class="ti-github"></span>More on GitHub</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio page -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="vg-footer" id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <h2 class="footer-title">Contact me</h2>
+          <a href="mailto:alvarosnchzpnd@gmail.com" class="footer-email">alvarosnchzpnd@gmail.com</a>
+        </div>
+        <ul class="footer-social">
+          <li>
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-pinedo-25a9b7291/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="ti-linkedin"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/asp161" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span class="ti-github"></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:alvarosnchzpnd@gmail.com" aria-label="Email">
+              <span class="ti-email"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-copy">Copyright &copy; 2026. All rights reserved | Álvaro Sánchez Pinedo</p>
     </div>
-  </div>
+  </footer>
+
   <script src="../assets/js/jquery-3.5.1.min.js"></script>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>  
-  <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script> 
-  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script> 
-  <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>  
-  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/wow/wow.min.js"></script>
-  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="../assets/js/topbar-virtual.js"></script>
-  <script src="../assets/js/Redirectgithub.js"></script>
 </body>
 </html>
