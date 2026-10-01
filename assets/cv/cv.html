@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Álvaro Sánchez Pinedo | Currículum</title>
+  <link rel="icon" href="../icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;800&family=Raleway:wght@800&display=swap">
+  <style>
+    /*
+      Source of AlvaroSanchezPinedo_CV.pdf: one A4 page, sizes in points.
+      To export it again: open this file in the browser, Print, paper A4,
+      margins "None", background graphics on, and save as PDF.
+    */
+    :root {
+      --band: #d1cfcf;
+      --side: #f4f4f4;
+      --dark: #323232;
+      --name: #444444;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      position: relative;
+      width: 210mm;
+      height: 297mm;
+      overflow: hidden;
+      background-color: #fff;
+      color: #000;
+      font: 400 10.2pt/1.5 'Lato', sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* Header */
+    .header {
+      position: absolute;
+      top: 11.5pt;
+      left: 0;
+      width: 100%;
+      height: 201.7pt;
+      background-color: var(--band);
+      z-index: 2;
+    }
+
+    /* The ring keeps the band colour where the photo hangs over the sidebar */
+    .photo {
+      position: absolute;
+      top: 48.7pt;
+      left: 56.2pt;
+      width: 170.8pt;
+      height: 170.8pt;
+      padding: 7.6pt;
+      border-radius: 50%;
+      background-color: var(--band);
+    }
+
+    .photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .name {
+      position: absolute;
+      top: 48.6pt;
+      left: 277.3pt;
+      margin: 0;
+      color: var(--name);
+      font: 800 42.2pt/52.3pt 'Montserrat', sans-serif;
+    }
+
+    .role {
+      position: absolute;
+      top: 163.9pt;
+      left: 278.3pt;
+      margin: 0;
+      color: var(--name);
+      font: 700 14.2pt/1 'Montserrat', sans-serif;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    /* Columns */
+    .sidebar {
+      position: absolute;
+      top: 213.2pt;
+      left: 0;
+      width: 248.8pt;
+      height: 611pt;
+      padding: 37.6pt 10pt 0 46.3pt;
+      background-color: var(--side);
+      font-size: 11.1pt;
+    }
+
+    .main {
+      position: absolute;
+      top: 213.2pt;
+      left: 279.2pt;
+      width: 269.2pt;
+      padding-top: 37.6pt;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--dark);
+      font: 800 15.1pt/1 'Raleway', sans-serif;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      margin-top: 11.4pt;
+      width: 47.3pt;
+      height: 3pt;
+      background-color: var(--dark);
+    }
+
+    section + section {
+      margin-top: 16.8pt;
+    }
+
+    .main section + section {
+      margin-top: 9pt;
+    }
+
+    /* Contact */
+    .contact {
+      margin-top: 15.6pt;
+    }
+
+    .contact li {
+      display: flex;
+      align-items: center;
+      height: 22.7pt;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .contact li + li {
+      margin-top: 10.2pt;
+    }
+
+    .contact a[href^="tel:"],
+    .contact a[href^="mailto:"] {
+      text-decoration: none;
+    }
+
+    .icon {
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8.9pt;
+      width: 22.7pt;
+      height: 22.7pt;
+      border-radius: 50%;
+      background-color: var(--dark);
+    }
+
+    .icon svg {
+      width: 13pt;
+      height: 13pt;
+      fill: #fff;
+    }
+
+    /* Bulleted lists */
+    .bullets li {
+      position: relative;
+      padding-left: 20.7pt;
+    }
+
+    .bullets li::before {
+      content: "";
+      position: absolute;
+      left: 8pt;
+      width: 3.7pt;
+      height: 3.7pt;
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    .skills {
+      margin-top: 11.7pt;
+      font-size: 11.6pt;
+      line-height: 17.5pt;
+    }
+
+    .skills li::before {
+      top: 7.4pt;
+    }
+
+    .education {
+      margin-top: 7pt;
+      line-height: 17.4pt;
+    }
+
+    .education li + li {
+      margin-top: 4pt;
+    }
+
+    .education li::before {
+      top: 8pt;
+    }
+
+    .education h3 {
+      margin: 0 0 3pt;
+      font: 400 11.3pt/17.4pt 'Lato', sans-serif;
+      letter-spacing: 0.5pt;
+      white-space: nowrap;
+    }
+
+    .education p {
+      margin: 0;
+      font-size: 10.4pt;
+      white-space: nowrap;
+    }
+
+    /* About */
+    .about {
+      margin: 15pt 0 0;
+      line-height: 15.33pt;
+      text-align: justify;
+    }
+
+    /* Experience */
+    .jobs {
+      margin-top: 13pt;
+    }
+
+    .jobs li {
+      padding-left: 19.2pt;
+    }
+
+    .jobs li + li {
+      margin-top: 24pt;
+    }
+
+    .jobs li::before {
+      top: 6.4pt;
+    }
+
+    .jobs h3 {
+      margin: 0 0 7.7pt;
+      font: 700 11.3pt/16pt 'Lato', sans-serif;
+      letter-spacing: 0.3pt;
+    }
+
+    .jobs .meta {
+      margin: 0;
+      line-height: 13.7pt;
+    }
+
+    .jobs .text {
+      margin: 9pt 0 0;
+      line-height: 14pt;
+      text-align: justify;
+    }
+
+    /* On screen, show the sheet centred on a grey desk */
+    @media screen and (min-width: 220mm) {
+      html, body {
+        background-color: #e6e6e6;
+      }
+
+      .page {
+        margin: 10mm auto;
+        box-shadow: 0 2mm 8mm rgba(0, 0, 0, 0.18);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <!-- Header -->
+    <header class="header">
+      <div class="photo">
+        <img src="../img/me.jpg" alt="Álvaro Sánchez Pinedo">
+      </div>
+      <h1 class="name">Álvaro<br>Sánchez</h1>
+      <p class="role">Frontend Developer</p>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <section>
+        <h2>Contacto</h2>
+        <ul class="contact">
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
+            <a href="tel:+34651391238">+34 651391238</a>
+          </li>
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+            <a href="mailto:sanchezpinedoalvaro@gmail.com">sanchezpinedoalvaro@gmail.com</a>
+          </li>
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg></span>
+            <span><a href="https://asp161.github.io/portfolio/">Portfolio</a> · <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-pinedo-25a9b7291/">LinkedIn</a> · <a href="https://github.com/asp161">GitHub</a></span>
+          </li>
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg></span>
+            <span>Vehículo propio</span>
+          </li>
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg></span>
+            <span>B2 Inglés</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Habilidades</h2>
+        <ul class="bullets skills">
+          <li>Angular, TypeScript, JavaScript, Ionic, HTML, CSS</li>
+          <li>PHP, MySQL, WordPress, Omeka</li>
+          <li>C, C++, Java (Android Studio)</li>
+          <li>Git, Scrum, seguridad web</li>
+          <li>Resolución de problemas</li>
+          <li>Trabajo en equipo</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Educación</h2>
+        <ul class="bullets education">
+          <li>
+            <h3>Ingeniería Multimedia</h3>
+            <p>Universidad de Alicante · 2020-2026</p>
+            <p>TFG: MoodFlow · <b>Nota: 10/10</b></p>
+            <p>App móvil con Ionic y Angular</p>
+          </li>
+          <li>
+            <h3>Bachillerato Científico Técnico</h3>
+            <p>IES Playa San Juan · 2018-2020</p>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Main column -->
+    <div class="main">
+      <section>
+        <h2>Acerca de mí</h2>
+        <p class="about">Ingeniero Multimedia y desarrollador frontend especializado en Angular y TypeScript. Hoy desarrollo aplicaciones web en Volkswagen Digital:Hub. Durante la carrera profundicé en ciberseguridad, por lo que cuido que lo que construyo sea seguro, accesible y agradable de usar.</p>
+      </section>
+
+      <section>
+        <h2>Experiencia laboral</h2>
+        <ul class="bullets jobs">
+          <li>
+            <h3>Frontend Developer</h3>
+            <p class="meta">Empresa Volkswagen Digital:Hub</p>
+            <p class="meta">Julio 2025 – Actualidad</p>
+            <p class="text">Desarrollo aplicaciones web con Angular y TypeScript para soluciones digitales del sector de la automoción, implementando interfaces responsivas y arquitecturas frontend modernas.</p>
+          </li>
+          <li>
+            <h3>Angular Developer (Prácticas)</h3>
+            <p class="meta">Empresa NTT DATA</p>
+            <p class="meta">Enero 2025 – Mayo 2025</p>
+            <p class="text">Durante mis prácticas participé en el desarrollo de aplicaciones web con Angular y TypeScript, colaborando con equipos multidisciplinares bajo la metodología Scrum. Implementé interfaces responsivas y accesibles siguiendo buenas prácticas de frontend y participé en revisiones de código y resolución de errores.</p>
+          </li>
+          <li>
+            <h3>Cajero / Reponedor</h3>
+            <p class="meta">Empresa Consum</p>
+            <p class="meta">Veranos de 2022 y 2023</p>
+            <p class="text">Atención al cliente en caja, gestión de pagos y cobros y reposición de productos en tienda.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
