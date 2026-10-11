@@ -647,6 +647,12 @@ a:hover, a:active {
   transform: translateX(3px);
 }
 
+.highlight-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
 /*
     10. Service
 */
